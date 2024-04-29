@@ -1,31 +1,64 @@
 {
-  "posts": [
+  "users": [
     {
-      "id": 1,
-      "title": "Post 1"
-    },
-    {
-      "id": 2,
-      "title": "Post 2"
-    },
-    {
-      "id": 3,
-      "title": "Post 3"
+      "id": "u10001",
+      "fistName": "John",
+      "lastName": "Doe"
     }
   ],
-  "comments": [
+  "accounts": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "userId": "u10001",
+      "accountId": "a10001",
+      "accountType": "depositAccount",
+      "displayName": "My Checking Acc XXXX3223",
+      "status": "OPEN",
+      "nickName": "Account 1",
+      "balanceAsOf": "2017-11-05T13:15:30.751Z",
+      "currentBalance": 13300.35
     },
     {
-      "id": 2,
-      "body": "some comment",
-      "postId": 1
+      "id": "a10002",
+      "userId": "u10001",
+      "accountType": "depositAccount",
+      "displayName": "My Checking Acc XXXX4443",
+      "status": "OPEN",
+      "nickName": "Account 2",
+      "balanceAsOf": "2017-11-05T13:15:30.751Z",
+      "currentBalance": 332.22
+    },
+    {
+      "userId": "u10001",
+      "id": "a20001",
+      "accountType": "loanAccount",
+      "displayName": "My Mortgage Acc XXXX9979",
+      "status": "OPEN",
+      "nickName": "Account 3",
+      "balanceAsOf": "2017-11-05T13:15:30.751Z",
+      "principalBalance": 133000.35,
+      "loanTerm": 30,
+      "nextPaymentDate": "2017-12-01T12:00:00.000Z",
+      "nextPaymentAmount": 2333.32
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "transactions": [
+    {
+      "accountId": "a10001",
+      "transactionId": "t20001",
+      "transactionCategory": "DEPOSIT_ACCOUNT_TRANSACTION",
+      "postedTimestamp": "2017-11-05T13:15:30.751Z",
+      "description": "Direct depoisit from XYZ",
+      "debitCreditMemo": "CREDIT",
+      "amount": "1200.42"
+    },
+    {
+      "accountId": "a10001",
+      "transactionId": "t20001",
+      "transactionCategory": "DEPOSIT_ACCOUNT_TRANSACTION",
+      "postedTimestamp": "2017-11-05T13:15:31.751Z",
+      "description": "Withdrawal from ATM",
+      "debitCreditMemo": "DEBIT",
+      "amount": "1200.42"
+    }
+  ]
 }

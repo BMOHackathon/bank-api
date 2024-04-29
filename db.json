@@ -8,8 +8,8 @@
   ],
   "accounts": [
     {
+      "id": "a10001",
       "userId": "u10001",
-      "accountId": "a10001",
       "accountType": "depositAccount",
       "displayName": "My Checking Acc XXXX3223",
       "status": "OPEN",
@@ -28,8 +28,8 @@
       "currentBalance": 332.22
     },
     {
-      "userId": "u10001",
       "id": "a20001",
+      "userId": "u10001",
       "accountType": "loanAccount",
       "displayName": "My Mortgage Acc XXXX9979",
       "status": "OPEN",
@@ -43,8 +43,8 @@
   ],
   "transactions": [
     {
+      "id": "t20001",
       "accountId": "a10001",
-      "transactionId": "t20001",
       "transactionCategory": "DEPOSIT_ACCOUNT_TRANSACTION",
       "postedTimestamp": "2017-11-05T13:15:30.751Z",
       "description": "Direct depoisit from XYZ",
@@ -52,8 +52,8 @@
       "amount": "1200.42"
     },
     {
+      "id": "t20001",
       "accountId": "a10001",
-      "transactionId": "t20001",
       "transactionCategory": "DEPOSIT_ACCOUNT_TRANSACTION",
       "postedTimestamp": "2017-11-05T13:15:31.751Z",
       "description": "Withdrawal from ATM",
